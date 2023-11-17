@@ -1,8 +1,8 @@
-import { ReactElement, ReactNode } from "react"
+import { ReactElement} from "react"
 
 type CounterProps = {
     count: number,
-    clickHandler
+    clickHandler: any
 }
 
 const Counter = ({count, clickHandler}: CounterProps): ReactElement => {
