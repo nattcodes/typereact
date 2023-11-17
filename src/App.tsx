@@ -10,11 +10,12 @@ function App() {
   const clickHandler = () => {
     setCount(prev => prev + 1)
   }
+  
 
   return(
     <>
       <Heading title={"My Title"}/>
-      <Section title="unknown sub-heading title">Passing Children</Section>
+      <Section title="unknown sub-heading title"/>
       <Counter
         count={count}
         clickHandler={clickHandler}

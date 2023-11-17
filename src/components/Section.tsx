@@ -1,24 +1,16 @@
-import {ReactNode} from 'react'
-
 
 type SectionProps = {
-  title? : string,
-  children: ReactNode
+  title: string
 }
 
 const Section = ({
-children,
 title = "Subheading"
 
 }: SectionProps) => {
   return (
     <section>
-      <h2>
-        {title}
-      </h2>
-      <p>
-        {children}
-      </p>
+      <h2>{title}</h2>
+      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, architecto!</p>
     </section>
   )
 }
