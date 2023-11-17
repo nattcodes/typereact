@@ -2,6 +2,7 @@ import {useState} from 'react'
 import Counter from "./components/Counter"
 import Heading from "./components/Heading"
 import Section from "./components/Section"
+import List from "./components/List"
 
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
       <Counter
         count={count}
         clickHandler={clickHandler}
+      />
+      <List 
+        items={['james', 'john', 'peter']}
+        render={(item: string) => <p>{item}</p>}
       />
     </>
   )
