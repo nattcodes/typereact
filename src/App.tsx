@@ -1,31 +1,23 @@
-import {useState} from 'react'
-import Counter from "./components/Counter"
-import Heading from "./components/Heading"
-import Section from "./components/Section"
-import List from "./components/List"
+import { useEffect, useState } from "react"
 
+interface User {
+  id: number,
+  username: string
+}
 
 function App() {
-  
   const [count, setCount] = useState<number>(0)
-  const clickHandler = () => {
-    setCount(prev => prev + 1)
-  }
-  
-  
+  const [users, setUsers] = useState<User[] | null>(null)
 
+  useEffect(() => {
+    console.log('first');
+
+    return() => console.log("second")
+  }, [])
+  
   return(
     <>
-      <Heading title={"My Title"}/>
-      <Section title="unknown sub-heading title"/>
-      <Counter
-        count={count}
-        clickHandler={clickHandler}
-      />
-      <List 
-        items={['james', 'john', 'peter']}
-        render={(item: string) => <p>{item}</p>}
-      />
+      
     </>
   )
 }
