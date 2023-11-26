@@ -31,7 +31,7 @@ function App() {
   }, [users])
 
  
-  const addTwo = useCallback((e: MouseEvent<HTMLButtonElement>): void => setCount( count + 1 ), [])
+  const addTwo = useCallback((e: MouseEvent<HTMLButtonElement> | KeyboardEvent): void => setCount( count + 1 ), [])
 
   const result = useMemo<number>(() => fib(myNum), [myNum])
 
