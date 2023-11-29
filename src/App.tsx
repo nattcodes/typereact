@@ -29,7 +29,6 @@ function App() {
     
     
   }, [users])
-
  
   const addTwo = useCallback((e: MouseEvent<HTMLButtonElement> | KeyboardEvent): void => setCount( count + 1 ), [])
 
