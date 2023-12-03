@@ -26,8 +26,7 @@ function App() {
 
     return() => console.log("second")
     
-    
-    
+  
   }, [users])
 
   
